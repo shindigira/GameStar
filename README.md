@@ -4,7 +4,7 @@
 
 - Target 4-8 hours of development time
 - Choose one or two public API's
--
+- Focus on one or two features
 
 ## Selected Options to Meet the Criteria
 
@@ -15,7 +15,7 @@
 
 ### API usage, Views and User Flow
 
-- Game data comes from RAWG.
+- Game data comes from RAWG. A game's name from RAWG data is used to fetch CHATGPT information on said game.
 
 * Main Card(s) View - User can view multiple video game cards to obtain information on said cards.
 * Selected Card View - User can select a video game card and get a CHATGPT description on said video game card.
