@@ -29,6 +29,14 @@ start:
 	pnpm dev
 .PHONY: start
 
+build:
+	pnpm build
+.PHONY: build
+
+test:
+	pnpm test
+.PHONY: test
+
 environment-variables-instructions:
 	@printf "\n\n\nMake sure your environment variables are set:\n"
 	@printf "Create a ${BLUE}.env${RESET} file:\n"
