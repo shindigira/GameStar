@@ -1,0 +1,747 @@
+export const popularGames = {
+  count: 15,
+  next: "https://api.rawg.io/api/collections/lists/popular?page=2",
+  previous: null,
+  results: [
+    {
+      id: 18721,
+      slug: "cozy-games-2",
+      name: "Cozy Games",
+      noindex: false,
+      description:
+        "These games contain a mix of these features:<br>1. Let you do what you want when you want.<br>2. Let you own a farm and decorate your home. <br>3. Have a story line that you can play through at your own pace.<br>4. Talk to and maybe have a relationship with villagers.<br>5. Overall have a fun and cozy experience.",
+      creator: {
+        id: 597318,
+        username: "GamerGirl23",
+        slug: "gamergirl23",
+        full_name: "",
+        avatar: null,
+        games_count: 447,
+        collections_count: 8,
+      },
+      created: "2021-09-06T01:14:02.154329Z",
+      updated: "2023-04-21T13:05:37.490653Z",
+      game_background: {
+        url: "https://media.rawg.io/media/games/035/035b7bd6d015e07e501d2234ec629dc3.jpg",
+        dominant_color: "0f0f0f",
+        saturated_color: "0f0f0f",
+      },
+      backgrounds: [
+        {
+          url: "https://media.rawg.io/media/games/035/035b7bd6d015e07e501d2234ec629dc3.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/558/558d29cc36d10afae417542ee54a1823.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/864/8645fabb679f024e62c21cdfe125d393.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/85f/85f743d69d89af880705af4a172a3b43.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+      games_count: 214,
+      posts_count: 0,
+      likes_count: 81,
+      likes_users: 15,
+      likes_positive: 15,
+      likes_rating: 15,
+      share_image:
+        "https://media.rawg.io/media/api/images/collections/771/77102b3b698d372196e80875859bb410_18721.jpg",
+      language: "eng",
+      is_private: false,
+      description_raw:
+        "These games contain a mix of these features:\n1. Let you do what you want when you want.\n2. Let you own a farm and decorate your home. \n3. Have a story line that you can play through at your own pace.\n4. Talk to and maybe have a relationship with villagers.\n5. Overall have a fun and cozy experience.",
+      game_covers: [
+        {
+          url: "https://media.rawg.io/media/games/558/558d29cc36d10afae417542ee54a1823.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/864/8645fabb679f024e62c21cdfe125d393.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/85f/85f743d69d89af880705af4a172a3b43.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+    },
+    {
+      id: 11164,
+      slug: "vr-multi-players-games",
+      name: "VR multi players games",
+      noindex: false,
+      description: "",
+      creator: {
+        id: 570685,
+        username: "monsieurv",
+        slug: "monsieurv",
+        full_name: "",
+        avatar: null,
+        games_count: 552,
+        collections_count: 12,
+      },
+      created: "2020-05-10T13:53:36.851435Z",
+      updated: "2022-02-15T21:07:45.802063Z",
+      game_background: {
+        url: "https://media.rawg.io/media/games/b19/b191ff2b8ccb646d1d2d9297ed5c7e89.jpg",
+        dominant_color: "0f0f0f",
+        saturated_color: "0f0f0f",
+      },
+      backgrounds: [
+        {
+          url: "https://media.rawg.io/media/games/b19/b191ff2b8ccb646d1d2d9297ed5c7e89.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/62f/62f2f6a32c1146e3ef067ff0a7c8b586.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/392/392e66df7cb16f1a18d426f3ba0719aa.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/75c/75c9b2a8e308bb44059d52ff59006e16.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+      games_count: 17,
+      posts_count: 0,
+      likes_count: 3,
+      likes_users: 2,
+      likes_positive: 2,
+      likes_rating: 2,
+      share_image:
+        "https://media.rawg.io/media/api/images/collections/039/039f8b8855b752e863c6fa8e3b31c6b3_11164.jpg",
+      language: "eng",
+      is_private: false,
+      game_covers: [
+        {
+          url: "https://media.rawg.io/media/screenshots/62f/62f2f6a32c1146e3ef067ff0a7c8b586.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/392/392e66df7cb16f1a18d426f3ba0719aa.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/75c/75c9b2a8e308bb44059d52ff59006e16.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+    },
+    {
+      id: 2943,
+      slug: "first-person-exploration-sublime-atmosphere",
+      name: "Sublime atmosphere",
+      noindex: false,
+      description: "",
+      creator: {
+        id: 20314,
+        username: "mariopo1",
+        slug: "mariopo1",
+        full_name: "",
+        avatar:
+          "https://media.rawg.io/media/avatars/c8f/c8f10b42b09e89ca6d4b77f8c4593576.png",
+        games_count: 360,
+        collections_count: 1,
+      },
+      created: "2018-09-15T02:13:16.804786Z",
+      updated: "2022-08-17T02:15:06.511512Z",
+      game_background: {
+        url: "https://media.rawg.io/media/games/c64/c64d2f63cabeab9126693b7d39539c8d.jpg",
+        dominant_color: "0f0f0f",
+        saturated_color: "0f0f0f",
+      },
+      backgrounds: [
+        {
+          url: "https://media.rawg.io/media/games/c64/c64d2f63cabeab9126693b7d39539c8d.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/e6d/e6de699bd788497f4b52e2f41f9698f2.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/cd3/cd3c9c7d3e95cb1608fd6250f1b90b7a.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/018/01857c5ff9579c48fa8bd76b4d83a946.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+      games_count: 23,
+      posts_count: 0,
+      likes_count: 69,
+      likes_users: 9,
+      likes_positive: 9,
+      likes_rating: 9,
+      share_image:
+        "https://media.rawg.io/media/api/images/collections/e4f/e4f7e0f1f761b489f19094c1236cc56a_2943.jpg",
+      language: "eng",
+      is_private: false,
+      game_covers: [
+        {
+          url: "https://media.rawg.io/media/games/e6d/e6de699bd788497f4b52e2f41f9698f2.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/cd3/cd3c9c7d3e95cb1608fd6250f1b90b7a.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/018/01857c5ff9579c48fa8bd76b4d83a946.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+    },
+    {
+      id: 8006,
+      slug: "social-stealth",
+      name: "Social Stealth",
+      noindex: false,
+      description: "",
+      creator: {
+        id: 559017,
+        username: "kosteyy",
+        slug: "kosteyy",
+        full_name: "",
+        avatar:
+          "https://media.rawg.io/media/avatars/1c0/1c002cd66b0504fdeca6aee33ed08ddc.png",
+        games_count: 0,
+        collections_count: 7,
+      },
+      created: "2019-12-05T02:35:03.870743Z",
+      updated: "2019-12-22T05:32:46Z",
+      game_background: {
+        url: "https://media.rawg.io/media/games/534/534d61ab5c9bfe29d94466377f6d0d6b.jpg",
+        dominant_color: "0f0f0f",
+        saturated_color: "0f0f0f",
+      },
+      backgrounds: [
+        {
+          url: "https://media.rawg.io/media/games/534/534d61ab5c9bfe29d94466377f6d0d6b.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/19a/19a64550775803ae254db17ca7c2cb06.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/d4a/d4abb4559883383dcf867b3ddb8dd960.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/ff5/ff594fc8b1ada40fe2ae9a5d549dc197.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+      games_count: 11,
+      posts_count: 0,
+      likes_count: 13,
+      likes_users: 2,
+      likes_positive: 2,
+      likes_rating: 2,
+      share_image:
+        "https://media.rawg.io/media/api/images/collections/4e9/4e9dc259b774761e64a39ad4173eb5e7_8006.jpg",
+      language: "eng",
+      is_private: false,
+      game_covers: [
+        {
+          url: "https://media.rawg.io/media/screenshots/19a/19a64550775803ae254db17ca7c2cb06.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/d4a/d4abb4559883383dcf867b3ddb8dd960.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/ff5/ff594fc8b1ada40fe2ae9a5d549dc197.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+    },
+    {
+      id: 2254,
+      slug: "best-crowdfunded-games",
+      name: "Best Crowdfunded Games",
+      noindex: false,
+      description:
+        "Many modern games are of such great quality that you can&#39;t assume they were crowdfunded. Even the developers themselves don&#39;t expect their games to get funded sometimes. Here is a list of games, that prove, if the project is ambitious and creative enough, it will succeed.",
+      creator: {
+        id: 2698,
+        username: "Keravanjoki",
+        slug: "keravanjoki",
+        full_name: "",
+        avatar:
+          "https://media.rawg.io/media/avatars/ad4/ad45a137024757ad0a97fff0bf9ba116.jpg",
+        games_count: 14,
+        collections_count: 16,
+      },
+      created: "2018-05-08T09:22:34.660180Z",
+      updated: "2018-05-08T11:10:33Z",
+      game_background: {
+        url: "https://media.rawg.io/media/games/570/5705f063e549547b22db00b643619388.jpg",
+        dominant_color: "0f0f0f",
+        saturated_color: "0f0f0f",
+      },
+      backgrounds: [
+        {
+          url: "https://media.rawg.io/media/games/570/5705f063e549547b22db00b643619388.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/926/9268bcfde5bea6f457a6833a55b653e9.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/5f4/5f4780690dbf04900cbac5f05b9305f3.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/8c8/8c8e92ef385fb2394a96cee14061c901.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+      games_count: 7,
+      posts_count: 0,
+      likes_count: 5,
+      likes_users: 5,
+      likes_positive: 5,
+      likes_rating: 5,
+      share_image:
+        "https://media.rawg.io/media/api/images/collections/41b/41b2e103e56d7212c0db52b41942ea4f_2254.jpg",
+      language: "eng",
+      is_private: false,
+      description_raw:
+        "Many modern games are of such great quality that you can't assume they were crowdfunded. Even the developers themselves don't expect their games to get funded sometimes. Here is a list of games, that prove, if the project is ambitious and creative enough, it will succeed.",
+      game_covers: [
+        {
+          url: "https://media.rawg.io/media/games/926/9268bcfde5bea6f457a6833a55b653e9.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/5f4/5f4780690dbf04900cbac5f05b9305f3.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/8c8/8c8e92ef385fb2394a96cee14061c901.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+    },
+    {
+      id: 2311,
+      slug: "best-deadpool-game-cameos",
+      name: "Best Deadpool Game Cameos",
+      noindex: false,
+      description:
+        "Deadpool became widely popular after his solo movie that was released in 2016. Before that he only had cameos in the X-men movies. They were bad and infuriating to fans of the guy. Now Deadpool has a sequel and his own awesome game. The developers also try to include him in every Marvel title. And let&#39;s be honest, this guy steals every scene!",
+      creator: {
+        id: 2598,
+        username: "MeZev",
+        slug: "mezev",
+        full_name: "",
+        avatar:
+          "https://media.rawg.io/media/avatars/40c/40c11798b5e8a638e1a81e40d53c82bd.png",
+        games_count: 40,
+        collections_count: 16,
+      },
+      created: "2018-05-16T19:28:37.965111Z",
+      updated: "2018-05-18T13:45:18Z",
+      game_background: {
+        url: "https://media.rawg.io/media/games/a87/a8743bdee8627c55bb9f2f01b9136ac1.jpg",
+        dominant_color: "0f0f0f",
+        saturated_color: "0f0f0f",
+      },
+      backgrounds: [
+        {
+          url: "https://media.rawg.io/media/games/a87/a8743bdee8627c55bb9f2f01b9136ac1.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/bef/bef40c8ee09ad001c0f0b2cf0d07f20e.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/ce3/ce38c9a778138b8886355c40d727f0d8.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/106/10679840f87dba8f493612d9d542d566.jpeg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+      games_count: 7,
+      posts_count: 0,
+      likes_count: 0,
+      likes_users: 0,
+      likes_positive: 0,
+      likes_rating: 0,
+      share_image:
+        "https://media.rawg.io/media/api/images/collections/8b0/8b0d503ec0db18224bed7be744241b45_2311.jpg",
+      language: "eng",
+      is_private: false,
+      description_raw:
+        "Deadpool became widely popular after his solo movie that was released in 2016. Before that he only had cameos in the X-men movies. They were bad and infuriating to fans of the guy. Now Deadpool has a sequel and his own awesome game. The developers also try to include him in every Marvel title. And let's be honest, this guy steals every scene!",
+      game_covers: [
+        {
+          url: "https://media.rawg.io/media/games/bef/bef40c8ee09ad001c0f0b2cf0d07f20e.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/ce3/ce38c9a778138b8886355c40d727f0d8.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/106/10679840f87dba8f493612d9d542d566.jpeg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+    },
+    {
+      id: 3329,
+      slug: "the-12-best-puzzle-games-of-all-time",
+      name: "The 12 Best Puzzle Games of All Time",
+      noindex: false,
+      description:
+        "Are you a mastermind or just like to spend some time solving puzzles? No matter if you are searching for a challenge or another time killer, here are the best puzzle games ever created to fit any your desire.",
+      creator: {
+        id: 2290,
+        username: "rawg_editorial",
+        slug: "rawg_editorial",
+        full_name: "RAWG Editorial",
+        avatar:
+          "https://media.rawg.io/media/avatars/12f/12fc841fe4dd9c2d6be02bc42dac57e4.jpg",
+        games_count: 9,
+        collections_count: 190,
+      },
+      created: "2018-11-22T15:24:11.961548Z",
+      updated: "2019-05-30T18:53:48Z",
+      game_background: {
+        url: "https://media.rawg.io/media/games/59d/59d568770eecc7b3f18fcedd314b68d3.jpg",
+        dominant_color: "0f0f0f",
+        saturated_color: "0f0f0f",
+      },
+      backgrounds: [
+        {
+          url: "https://media.rawg.io/media/games/59d/59d568770eecc7b3f18fcedd314b68d3.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/946/94683098e0befd482e5c890bd03cda26.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/d03/d030347839f74454afcd1008248b08ae.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/51d/51dd944987e4efb74b4bfd9cf0999d40.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+      games_count: 11,
+      posts_count: 0,
+      likes_count: 6,
+      likes_users: 5,
+      likes_positive: 5,
+      likes_rating: 5,
+      share_image:
+        "https://media.rawg.io/media/api/images/collections/764/7645ed3786f9fca2814b328ef3c87352_3329.jpg",
+      language: "eng",
+      is_private: false,
+      description_raw:
+        "Are you a mastermind or just like to spend some time solving puzzles? No matter if you are searching for a challenge or another time killer, here are the best puzzle games ever created to fit any your desire.",
+      game_covers: [
+        {
+          url: "https://media.rawg.io/media/screenshots/946/94683098e0befd482e5c890bd03cda26.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/d03/d030347839f74454afcd1008248b08ae.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/51d/51dd944987e4efb74b4bfd9cf0999d40.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+    },
+    {
+      id: 13515,
+      slug: "best-online-games",
+      name: "Best Online Games",
+      noindex: false,
+      description: "In this list best online games in my opinion",
+      creator: {
+        id: 580170,
+        username: "Toxic_Hunt3r",
+        slug: "toxic_hunt3r",
+        full_name: "Toxic Hunt3r",
+        avatar:
+          "https://media.rawg.io/media/avatars/92b/92b227d5240ce8a628c5ee033639e06b.png",
+        games_count: 1217,
+        collections_count: 3,
+      },
+      created: "2020-09-30T12:05:43.168283Z",
+      updated: "2020-12-25T16:44:13Z",
+      game_background: {
+        url: "https://media.rawg.io/media/games/48c/48cb04ca483be865e3a83119c94e6097.jpg",
+        dominant_color: "0f0f0f",
+        saturated_color: "0f0f0f",
+      },
+      backgrounds: [
+        {
+          url: "https://media.rawg.io/media/games/48c/48cb04ca483be865e3a83119c94e6097.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/447/4470c1e76f01acfaf5af9c207d1c1c92.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+      games_count: 5,
+      posts_count: 0,
+      likes_count: 451,
+      likes_users: 11,
+      likes_positive: 11,
+      likes_rating: 11,
+      share_image:
+        "https://media.rawg.io/media/api/images/collections/4ad/4addb3b6e4a80a72a165a1248c5b1606_13515.jpg",
+      language: "eng",
+      is_private: false,
+      description_raw: "In this list best online games in my opinion",
+      game_covers: [
+        {
+          url: "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/447/4470c1e76f01acfaf5af9c207d1c1c92.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+    },
+    {
+      id: 11428,
+      slug: "best-soundtrack-2",
+      name: "Best soundtrack",
+      noindex: false,
+      description: "",
+      creator: {
+        id: 6004,
+        username: "Ecto",
+        slug: "ecto",
+        full_name: "Ecto",
+        avatar:
+          "https://media.rawg.io/media/avatars/0ca/0caff4124606d81b26ae27b18dd50a85.jpg",
+        games_count: 1933,
+        collections_count: 2,
+      },
+      created: "2020-05-18T12:18:44.251332Z",
+      updated: "2020-09-25T09:08:58Z",
+      game_background: {
+        url: "https://media.rawg.io/media/games/f9a/f9a3b8c9d6ae61e29bd45782040d2c7e.jpg",
+        dominant_color: "0f0f0f",
+        saturated_color: "0f0f0f",
+      },
+      backgrounds: [
+        {
+          url: "https://media.rawg.io/media/games/f9a/f9a3b8c9d6ae61e29bd45782040d2c7e.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/b7d/b7d3f1715fa8381a4e780173a197a615.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/5f4/5f4780690dbf04900cbac5f05b9305f3.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/0be/0bea0a08a4d954337305391b778a7f37.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+      games_count: 13,
+      posts_count: 0,
+      likes_count: 69,
+      likes_users: 4,
+      likes_positive: 4,
+      likes_rating: 4,
+      share_image:
+        "https://media.rawg.io/media/api/images/collections/e84/e84e74189134584e6c889b3e69089768_11428.jpg",
+      language: "eng",
+      is_private: false,
+      game_covers: [
+        {
+          url: "https://media.rawg.io/media/games/b7d/b7d3f1715fa8381a4e780173a197a615.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/5f4/5f4780690dbf04900cbac5f05b9305f3.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/games/0be/0bea0a08a4d954337305391b778a7f37.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+    },
+    {
+      id: 21729,
+      slug: "multiplayer-25",
+      name: "Multiplayer",
+      noindex: false,
+      description: "",
+      creator: {
+        id: 26781,
+        username: "lemontrue",
+        slug: "lemontrue",
+        full_name: "",
+        avatar: null,
+        games_count: 1245,
+        collections_count: 8,
+      },
+      created: "2022-02-14T16:32:16.139991Z",
+      updated: "2022-05-28T21:05:59.856256Z",
+      game_background: {
+        url: "https://media.rawg.io/media/screenshots/be4/be46a96f0883819435330b6384f4a056.jpg",
+        dominant_color: "0f0f0f",
+        saturated_color: "0f0f0f",
+      },
+      backgrounds: [
+        {
+          url: "https://media.rawg.io/media/screenshots/be4/be46a96f0883819435330b6384f4a056.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/515/5156023c0144e412de193ed648417130.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/307/307c5e14cd2b7014ba80c8f6185d5ef7.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/3ae/3aee6b099a39035e986e01025fd5c0c6.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+      games_count: 40,
+      posts_count: 0,
+      likes_count: 69,
+      likes_users: 7,
+      likes_positive: 7,
+      likes_rating: 7,
+      share_image:
+        "https://media.rawg.io/media/api/images/collections/b3c/b3c2422988e698d50008fb9f96ec3f89_21729.jpg",
+      language: "eng",
+      is_private: false,
+      game_covers: [
+        {
+          url: "https://media.rawg.io/media/screenshots/515/5156023c0144e412de193ed648417130.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/307/307c5e14cd2b7014ba80c8f6185d5ef7.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+        {
+          url: "https://media.rawg.io/media/screenshots/3ae/3aee6b099a39035e986e01025fd5c0c6.jpg",
+          dominant_color: "0f0f0f",
+          saturated_color: "0f0f0f",
+        },
+      ],
+    },
+  ],
+};
