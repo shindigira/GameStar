@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      animation: {
+        "spin-slow": "spin 2s linear infinite",
+      },
       colors: {},
       backgroundImage: (theme) => ({
         "carbon-fiber":
@@ -16,9 +19,9 @@ module.exports = {
       content: {},
     },
     screens: {
-      xs: "480px",
-      sm: "768px",
-      md: "1060px",
+      // xs: "480px",
+      // sm: "768px",
+      // md: "1060px",
       tablet: "640px",
       // => @media (min-width: 640px) { ... }
       laptop: "1024px",
@@ -27,5 +30,5 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
   },
-  plugins: [],
+  plugins: [require("@shrutibalasa/tailwind-grid-auto-fit")],
 };

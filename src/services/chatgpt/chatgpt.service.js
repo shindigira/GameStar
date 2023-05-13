@@ -12,7 +12,7 @@ export const getChatGPTdata = async (game = "Half-Life") => {
         { role: "system", content: "You are" },
         {
           role: "user",
-          content: `What are your thoughts on the game ${game}?`,
+          content: `Give me the game summary of ${game}?`,
         },
       ],
       model: "gpt-3.5-turbo",
@@ -22,8 +22,17 @@ export const getChatGPTdata = async (game = "Half-Life") => {
         "Content-Type": "application/json",
         Authorization: `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`,
       },
-    }
+    },
   );
 
   return response.data.choices[0].message.content;
 };
+
+// export const getChatGPTdata2 = async (game = "Half-Life") => {
+//   const text = await getChatGPTdata(game);
+//   const newText = text.replaceAll(
+//     "As an AI language model, I don't have personal thoughts or opinions. However, ",
+//     "",
+//   );
+//   return newText;
+// };

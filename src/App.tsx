@@ -9,7 +9,6 @@ window.getChatGPTdata = getChatGPTdata;
 function App() {
   return (
     <div className="min-h-screen bg-carbon-fiber-2 font-poppins">
-      key: {import.meta.env.VITE_RAWG_API_KEY}
       <Loading />
     </div>
   );
