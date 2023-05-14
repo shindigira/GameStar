@@ -41,18 +41,10 @@ function App() {
       {/* <div className="border-8 border-red-600 py-5">test navbar</div> */}
       {isLoadingRecent && <Loading />}
       <HeroContainer game={game} />
-      <div className="bg-gray-900 text-white">
-        asdklfjlasdjklfasdk asdklfkladsjkad
-      </div>
-      <div className="bg-gray-900 text-white">
-        asdklfjlasdjklfasdk asdklfkladsjkad
-      </div>
-      <div className="bg-gray-900 text-white">
-        asdklfjlasdjklfasdk asdklfkladsjkad
-      </div>
-      <div className="bg-gray-900 text-white">
-        asdklfjlasdjklfasdk asdklfkladsjkad
-      </div>
+      <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div>
+      <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div>
+      <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div>
+      <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div>
     </div>
   );
 }

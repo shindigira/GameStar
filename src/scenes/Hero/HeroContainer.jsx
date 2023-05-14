@@ -3,7 +3,7 @@ import HeroMain from "@/scenes/Hero/HeroMain";
 
 const HeroContainer = ({ game }) => {
   return (
-    <div className="mx-auto min-h-full max-w-[133rem]">
+    <div className="min-h-3/4 mx-auto max-w-[133rem]">
       {game && <HeroMain game={game} />}
     </div>
   );
