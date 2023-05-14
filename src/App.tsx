@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Loading from "@/components/Loading";
 import Hero from "@/scenes/Hero/Hero";
 import {
@@ -14,7 +15,9 @@ import { getRandomGame } from "@/utility/helpers";
 // window.getChatGPTdata = getChatGPTdata;
 
 function App() {
-  // Initialize -
+  /////* Initialize */////
+  const [game, setGame] = useState(null);
+  /////* 1. Fetches latest games */////
   const init = "initialize";
   const {
     isLoading: isLoadingRecent,
@@ -22,17 +25,21 @@ function App() {
     data: dataRecent,
   } = useQuery(["recentGames", init], getRecentGames, {
     enabled: Boolean(init),
+    onSuccess: (res) => {
+      if (!game) {
+        const results = res.results;
+        setGame(getRandomGame(results || []));
+      }
+    },
   });
 
-  console.log(dataRecent);
-  const randomRecentGame = dataRecent ? getRandomGame(dataRecent) : null;
   return (
     <div className="app bg-carbon-fiber-2 font-poppins">
-      <div className="mx-auto h-full w-full max-w-[133rem] ">
-        {isLoadingRecent && <Loading />}
-        {randomRecentGame && <Hero game={randomRecentGame} />}
+      {isLoadingRecent && <Loading />}
+      <div className="mx-auto h-full max-w-[133rem]">
+        {game && <Hero game={game} />}
       </div>
-      <div className="h-full bg-carbon-fiber-2 text-white">
+      <div className="bg-carbon-fiber-2 text-white">
         asdklfjlasdjklfasdk asdklfkladsjkad
       </div>
     </div>

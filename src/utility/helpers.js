@@ -1,11 +1,10 @@
 import { sample } from "lodash";
 
-export function getRandomGame(dataRecent) {
-  const results = dataRecent.results;
-  const randomResult =
-    sample(results).name === "Lust Academy - Season 2"
-      ? getRandomGame(dataRecent)
-      : sample(results);
+export function getRandomGame(results) {
+  let randomResult = sample(results);
+  if (randomResult.name === "Lust Academy - Season 2") {
+    randomResult = getRandomGame(results);
+  }
 
   return randomResult;
 }
