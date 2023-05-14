@@ -42,6 +42,7 @@ body,
   height: 100dvh;
   width: 100%;
   font-family: "DM Sans", sans-serif;
+  background: #111827;
 }
 
 #root {

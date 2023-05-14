@@ -30,7 +30,7 @@ function App() {
       /////* 2. If no game in the Hero section, select a random game */////
       if (!game) {
         const results = res.results;
-        console.log(results);
+        console.log("recent games:", results);
         setGame(getRandomGame(results || []));
       }
     },

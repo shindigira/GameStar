@@ -34,6 +34,10 @@ const Hero = ({ game }) => {
     data: dataChatGPTstring,
   } = useQuery(["chatGPT", gameName], () => getChatGPTdata(gameName), {
     enabled: Boolean(gameName),
+    onSuccess: (res) => {
+      /////* 2. If no game in the Hero section, select a random game */////
+      console.log("chatgpt response:", res);
+    },
   });
 
   return (
@@ -57,7 +61,7 @@ const Hero = ({ game }) => {
           {dataChatGPTstring && <p className="text-lg">{dataChatGPTstring}</p>}
         </div>
         {/* game card */}
-        <div className="mt-8 flex w-full justify-center desktop:mt-0 desktop:w-[35%]">
+        <div className="mt-8 flex w-full justify-center p-6 desktop:mt-0 desktop:w-[35%]">
           <div>
             <GameCard game={game} />
           </div>
