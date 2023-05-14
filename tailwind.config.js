@@ -7,7 +7,12 @@ export const theme = {
     animation: {
       "spin-slow": "spin 2s linear infinite",
     },
-    colors: {},
+    colors: {
+      "header-color": "#ffffff",
+      "paragraph-color": "#374151",
+      "component-border-color": "#374151",
+      "component-background-color": "#1f2937",
+    },
     backgroundImage: (theme) => ({
       "carbon-fiber":
         "radial-gradient(circle at center center, rgba(33,33,33,0),rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33))",

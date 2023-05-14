@@ -3,9 +3,16 @@ import { useQuery } from "@tanstack/react-query";
 import { getChatGPTdata } from "@/services/chatgpt/chatgpt.service.js";
 
 import Loading from "@/components/Loading";
+import GameCard from "@/components/GameCard";
 
 import ControllerImage2 from "@/assets/images/controller2.png";
 import ChatGPTIcon from "@/assets/images/chatgpt-icon.svg";
+
+import { getRandomBG } from "@/utility/helpers";
+
+// Darken bottom of background Image
+const darkGradient =
+  "linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.75) 80%, rgba(0, 0, 0, 1) 100%)";
 
 const Hero = ({ game }) => {
   /////* 1. Sets the Background Image of the game */////
@@ -14,7 +21,9 @@ const Hero = ({ game }) => {
   useEffect(() => {
     // BUG: Tailwind bug -- doesn't like external URL's in the 'bg-[url]' class, so this is a workaround.
     if (gameName) {
-      parentRef.current.style.backgroundImage = `url('${game.background_image}')`;
+      parentRef.current.style.backgroundImage = `${darkGradient}, url('${getRandomBG(
+        game,
+      )}')`;
     }
   }, [gameName]);
 
@@ -30,15 +39,11 @@ const Hero = ({ game }) => {
   return (
     <div
       ref={parentRef}
-      className={"relative h-full bg-cover bg-center bg-no-repeat px-10 py-36"}
+      className={"mb-10 h-full bg-cover bg-center bg-no-repeat py-36"}
     >
-      {/* Darken image */}
-      <div className="absolute left-0 top-0 h-full w-full bg-[rgba(0,0,0,0.4)]"></div>
-      {/* Linearly darken the bottom more */}
-      <div className="absolute bottom-0 left-0 h-full w-full bg-darken-bottom"></div>
-
-      <div className="relative flex flex-col items-center justify-center text-white desktop:flex-row">
-        <div className="relative w-full px-12 desktop:w-[55%]">
+      <div className="flex flex-col justify-center text-white desktop:flex-row">
+        {/* game summary */}
+        <div className="w-full px-12 desktop:w-[55%]">
           <h2 className="mb-7 text-5xl">{gameName}</h2>
 
           {isLoadingChatGPTstring && (
@@ -46,11 +51,17 @@ const Hero = ({ game }) => {
               primaryMessage={""}
               secondaryMessage={"Loading ChatGPT..."}
               icon={ChatGPTIcon}
+              animation={"none"}
             />
           )}
           {dataChatGPTstring && <p className="text-lg">{dataChatGPTstring}</p>}
         </div>
-        <div className="desktop:w-[35%] ">asdf</div>
+        {/* game card */}
+        <div className="mt-8 flex w-full justify-center desktop:mt-0 desktop:w-[35%]">
+          <div>
+            <GameCard game={game} />
+          </div>
+        </div>
       </div>
     </div>
   );

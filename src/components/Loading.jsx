@@ -4,12 +4,15 @@ import ControllerImage from "@/assets/images/controller.png";
 function Loading({
   primaryMessage = "Loading...",
   secondaryMessage = "",
-  iconSize = 24,
+  iconSize = 20,
   icon = ControllerImage,
+  animation = "animate-bounce",
 }) {
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center bg-[rgba(0,0,0,0.4)] text-slate-500">
-      <div className="flex h-20 w-20 animate-bounce flex-col items-center justify-center">
+    <div className="flex h-full w-full flex-col items-center justify-center bg-[rgba(0,0,0,0.4)] p-3 text-slate-500">
+      <div
+        className={`flex h-16 w-16 ${animation}1 flex-col items-center justify-center`}
+      >
         <img src={icon} alt="" />
       </div>
       {primaryMessage && (
@@ -18,7 +21,7 @@ function Loading({
         </h1>
       )}
       {secondaryMessage && (
-        <h2 className="mb-10 animate-pulse text-center text-3xl font-bold">
+        <h2 className="mb-10 animate-pulse text-center text-2xl font-bold">
           {secondaryMessage}
         </h2>
       )}

@@ -8,3 +8,9 @@ export function getRandomGame(results) {
 
   return randomResult;
 }
+
+export function getRandomBG(game) {
+  const randomScreenshot =
+    sample(game.short_screenshots)?.image || game.background_image;
+  return randomScreenshot;
+}
