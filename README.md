@@ -31,7 +31,7 @@
 - React
 - TailwindCSS
 - React-Query(TanQuery)
-- React Hook Form
+- Axios
 - ESLint
 - Prettier
 - Vitest

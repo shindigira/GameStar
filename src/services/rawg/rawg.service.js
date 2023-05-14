@@ -4,15 +4,26 @@ const BASE_URL =
   import.meta.env.VITE_RAWG_BASE_URL || "https://api.rawg.io/api";
 
 export const getGenres = async () => {
-  return await axios.get(
-    `${BASE_URL}/genres?key=${import.meta.env.VITE_RAWG_API_KEY}`
+  const { data } = await axios.get(
+    `${BASE_URL}/genres?key=${import.meta.env.VITE_RAWG_API_KEY}`,
   );
+  return data;
 };
 
 export const getPopularGames = async () => {
   return await axios.get(
     `${BASE_URL}/collections/lists/popular?key=${
       import.meta.env.VITE_RAWG_API_KEY
-    }`
+    }`,
   );
+};
+
+export const getRecentGames = async () => {
+  const { data } = await axios.get(
+    `${BASE_URL}/games/lists/recent-games?discover=true&ordering=-added&page_size=10&page=1&key=${
+      import.meta.env.VITE_RAWG_API_KEY
+    }`,
+  );
+  return data;
+  // https://rawg.io/api/games/lists/recent-games?discover=true&ordering=-added&page_size=40&page=1&key=c542e67aec3a4340908f9de9e86038af
 };
