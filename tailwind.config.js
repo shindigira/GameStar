@@ -16,7 +16,8 @@ export const theme = {
       "darken-bottom": "linear-gradient(to top, #0f0f0f, rgba(0, 0, 0, 0))",
     }),
     fontFamily: {
-      poppins: ["Poppins", "sans-serif"],
+      dmsans: ["DM Sans", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
     },
     content: {},
     screens: {

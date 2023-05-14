@@ -26,6 +26,7 @@ function App() {
   } = useQuery(["recentGames", init], getRecentGames, {
     enabled: Boolean(init),
     onSuccess: (res) => {
+      /////* 2. If no game in the Hero section, select a random game */////
       if (!game) {
         const results = res.results;
         setGame(getRandomGame(results || []));
@@ -34,7 +35,8 @@ function App() {
   });
 
   return (
-    <div className="app bg-carbon-fiber-2 font-poppins">
+    <div className="app bg-carbon-fiber-2">
+      <div className="border-8 border-red-600 py-5">test navbar</div>
       {isLoadingRecent && <Loading />}
       <div className="mx-auto h-full max-w-[133rem]">
         {game && <Hero game={game} />}
