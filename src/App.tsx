@@ -26,6 +26,7 @@ function App() {
     data: dataRecent,
   } = useQuery(["recentGames", init], getRecentGames, {
     enabled: Boolean(init),
+    refetchOnWindowFocus: false,
     onSuccess: (res) => {
       /////* 2. If no game in the Hero section, select a random game */////
       if (!game) {

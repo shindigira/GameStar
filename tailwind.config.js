@@ -9,7 +9,7 @@ export const theme = {
     },
     colors: {
       "header-color": "#ffffff",
-      "paragraph-color": "#374151",
+      "paragraph-color": "#9ca3af",
       "component-border-color": "#374151",
       "component-background-color": "#1f2937",
     },
@@ -21,7 +21,7 @@ export const theme = {
       "darken-bottom": "linear-gradient(to top, #0f0f0f, rgba(0, 0, 0, 0))",
     }),
     fontFamily: {
-      dmsans: ["DM Sans", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
     },
     content: {},

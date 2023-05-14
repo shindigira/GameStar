@@ -8,7 +8,7 @@
 
 ## Selected Options to Meet the Criteria
 
-### API's
+### Selected API's
 
 - [RAWG](https://rawgthedocs.orels.sh/)
 - [OPENAI_CHATGPT](https://github.com/makeuseofcode/ChatGPT-API-Sample-Code/blob/main/Complete_Guide_to_the_ChatGPT_API.ipynb)
@@ -17,9 +17,10 @@
 
 - Game data comes from RAWG. A game's name from RAWG data is used to fetch CHATGPT information on said game.
 
-* Main Card(s) View - User can view multiple video game cards to obtain information on said cards.
 * Selected Card View - User can select a video game card and get a CHATGPT description on said video game card.
+* Main Card(s) View - User can view multiple video game cards to obtain information on said cards.
 * Loader View
+* Some level of responsiveness (Desktop, Mobile)
 
 ### Other
 

@@ -34,6 +34,7 @@ const Hero = ({ game }) => {
     data: dataChatGPTstring,
   } = useQuery(["chatGPT", gameName], () => getChatGPTdata(gameName), {
     enabled: Boolean(gameName),
+    refetchOnWindowFocus: false,
     onSuccess: (res) => {
       /////* 2. If no game in the Hero section, select a random game */////
       console.log("chatgpt response:", res);
@@ -53,7 +54,7 @@ const Hero = ({ game }) => {
           {isLoadingChatGPTstring && (
             <Loading
               primaryMessage={""}
-              secondaryMessage={"Loading ChatGPT..."}
+              secondaryMessage={"Fetching ChatGPT Summary..."}
               icon={ChatGPTIcon}
               animation={"none"}
             />
