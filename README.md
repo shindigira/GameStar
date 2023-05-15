@@ -17,7 +17,7 @@ A web app that aims to be *the* one-stop destination for gamers, providing them 
 ### Selected API's
 
 - [RAWG](https://rawgthedocs.orels.sh/)
-- [OPENAI_CHATGPT](https://github.com/makeuseofcode/ChatGPT-API-Sample-Code/blob/main/Complete_Guide_to_the_ChatGPT_API.ipynb)
+- [OPENAI_CHATGPT](https://platform.openai.com/docs/api-reference/completions)
 
 ### API usage, Views and User Flow
 
