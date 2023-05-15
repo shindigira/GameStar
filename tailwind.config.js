@@ -33,4 +33,5 @@ export const theme = {
     },
   },
 };
+// Tailwind Grid Auto-Fit: https://github.com/ThirusOfficial/tailwind-grid-auto-fit
 export const plugins = [require("@shrutibalasa/tailwind-grid-auto-fit")];

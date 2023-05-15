@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getChatGPTdata } from "@/services/chatgpt/chatgpt.service.js";
 
 import Loading from "@/components/Loading";
-import GameCard from "@/components/GameCard";
+import GameCard from "@/scenes/Game/GameCard";
 
 import ControllerImage2 from "@/assets/images/controller2.png";
 import ChatGPTIcon from "@/assets/images/chatgpt-icon.svg";
@@ -32,14 +32,17 @@ const Hero = ({ game }) => {
     isLoading: isLoadingChatGPTstring,
     error: errorChatGPTstring,
     data: dataChatGPTstring,
-  } = useQuery(["chatGPT", gameName], () => getChatGPTdata(gameName), {
-    enabled: Boolean(gameName),
-    refetchOnWindowFocus: false,
-    onSuccess: (res) => {
-      /////* 2. If no game in the Hero section, select a random game */////
-      console.log("chatgpt response:", res);
+  } = useQuery(
+    ["chatGPT", gameName],
+    ({ signal }) => getChatGPTdata(gameName, signal),
+    {
+      enabled: Boolean(gameName),
+      refetchOnWindowFocus: false,
+      onSuccess: (res) => {
+        // console.log("chatgpt response:", res);
+      },
     },
-  });
+  );
 
   return (
     <div
@@ -49,7 +52,7 @@ const Hero = ({ game }) => {
       <div className="flex flex-col justify-center text-white desktop:flex-row">
         {/* game summary */}
         <div className="w-full px-12 desktop:w-[55%]">
-          <h2 className="mb-7 text-5xl">{gameName}</h2>
+          <h2 className="mb-7 text-5xl font-bold">{gameName}</h2>
 
           {isLoadingChatGPTstring && (
             <Loading

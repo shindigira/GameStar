@@ -4,6 +4,8 @@ import { useQuery } from "@tanstack/react-query";
 // Components
 import Loading from "@/components/Loading";
 import HeroContainer from "@/scenes/Hero/HeroContainer";
+import SectionContainer from "@/components/SectionContainer";
+import GameCategory from "@/scenes/Game/GameCategory";
 
 // Services
 import {
@@ -31,21 +33,30 @@ function App() {
       /////* 2. If no game in the Hero section, select a random game */////
       if (!game) {
         const results = res.results;
-        console.log("recent games:", results);
+        console.log(results);
         setGame(getRandomGame(results || []));
       }
     },
   });
 
+  const recentGames = dataRecent?.results || [];
+
+  const isLoading = isLoadingRecent;
+
   return (
-    <div className="app bg-gray-900">
+    <div className="app">
       {/* <div className="border-8 border-red-600 py-5">test navbar</div> */}
-      {isLoadingRecent && <Loading />}
-      <HeroContainer game={game} />
+      {isLoading && <Loading />}
+      {!isLoading && (
+        <>
+          <HeroContainer game={game} />
+          <GameCategory games={recentGames} setGame={setGame} />
+        </>
+      )}
+
+      {/* <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div>
       <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div>
-      <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div>
-      <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div>
-      <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div>
+      <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div> */}
     </div>
   );
 }

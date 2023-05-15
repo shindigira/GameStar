@@ -4,7 +4,7 @@ const BASE_URL =
   import.meta.env.VITE_OPENAI_URL ||
   "https://api.openai.com/v1/chat/completions";
 
-export const getChatGPTdata = async (game = "Half-Life") => {
+export const getChatGPTdata = async (game = "Half-Life", signal) => {
   const response = await axios.post(
     BASE_URL,
     {
@@ -22,6 +22,7 @@ export const getChatGPTdata = async (game = "Half-Life") => {
         "Content-Type": "application/json",
         Authorization: `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`,
       },
+      signal,
     },
   );
 
