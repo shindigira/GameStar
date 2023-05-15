@@ -67,7 +67,7 @@ const Hero = ({ game }) => {
         {/* game card */}
         <div className="mt-8 flex w-full justify-center p-6 desktop:mt-0 desktop:w-[35%]">
           <div>
-            <GameCard game={game} />
+            <GameCard game={game} showButton={false} />
           </div>
         </div>
       </div>

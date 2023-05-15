@@ -4,14 +4,18 @@ import SectionContainer from "@/components/SectionContainer";
 import GameCard from "@/scenes/Game/GameCard";
 import HTitlePrimary from "@/shared/HTitlePrimary";
 
-const GameCategory = ({ games: gamesPre, setGame }) => {
+const GameCategory = ({
+  games: gamesPre,
+  setGame,
+  gameCategoryName = "Game Category",
+}) => {
   const games = gamesPre.filter(
     (game) => game.name !== "Lust Academy - Season 2",
   );
   return (
     <SectionContainer>
-      <div className="px-8">
-        <HTitlePrimary>Game Category</HTitlePrimary>
+      <div className="mx-8">
+        <HTitlePrimary>{gameCategoryName}</HTitlePrimary>
         <div className=" mt-5 grid gap-4 grid-auto-fit-[15rem]">
           {games.map((game) => {
             return (

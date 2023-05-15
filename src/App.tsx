@@ -21,13 +21,12 @@ function App() {
   /////* Initialize */////
   const [game, setGame] = useState(null);
   /////* 1. Fetches latest games */////
-  const init = "initialize";
   const {
     isLoading: isLoadingRecent,
     error: errorRecent,
     data: dataRecent,
-  } = useQuery(["recentGames", init], getRecentGames, {
-    enabled: Boolean(init),
+  } = useQuery([getRecentGames.name], getRecentGames, {
+    enabled: Boolean(getRecentGames.name),
     refetchOnWindowFocus: false,
     onSuccess: (res) => {
       /////* 2. If no game in the Hero section, select a random game */////

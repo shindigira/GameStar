@@ -13,7 +13,7 @@ function Loading({
       <div
         className={`flex h-16 w-16 ${animation} flex-col items-center justify-center`}
       >
-        <img src={icon} alt="" />
+        <img src={icon} alt="loading icon" />
       </div>
       {primaryMessage && (
         <h1 className="mb-10 mt-10 animate-pulse text-center text-5xl font-bold">

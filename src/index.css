@@ -45,6 +45,9 @@ body,
   width: 100%;
   font-family: "Roboto", sans-serif;
   /* background: #111827; */
+}
+
+body {
   background: radial-gradient(
       circle at center center,
       transparent,
@@ -69,8 +72,4 @@ body,
       transparent 8px
     ),
     linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
-}
-
-#root {
-  height: 100%;
 }
