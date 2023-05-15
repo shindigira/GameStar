@@ -1,3 +1,7 @@
+# To start
+
+Create a `.env` and place into the root of the projects' folder.
+
 # Required Environment Variables
 
 ```env
