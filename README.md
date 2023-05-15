@@ -2,6 +2,10 @@
 
 A web app that aims to be *the* one-stop destination for gamers, providing them with a wealth of information on all the latest game releases.
 
+![Home page](https://github.com/shindigira/GameStar/blob/main/public/GameStar-example.png?raw=true "Game Star")
+
+### Click here for live demo   <a href="https://game-star-iifzfx36q-shindigira.vercel.app/">Game Star</a>
+
 ## Criteria
 
 - Target 4-8 hours of development time
