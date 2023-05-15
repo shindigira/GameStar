@@ -29,7 +29,7 @@ A web app that aims to be *the* one-stop destination for gamers, providing them 
 ### App Flow
 
 - **On initial load, a request is sent to the RAWG API to fetch the latest game releases. Automatically, a random game is selected and placed into the selected view (Hero view) which subsequently fetches said random game's summary from ChatGPT.**
-- **The user is then able to select one of the other games to be the in the selected view.**
+- **The user is then able to select one of the other games to be in the selected view (Hero view).**
 
 ### Other
 
