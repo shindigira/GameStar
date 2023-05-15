@@ -1,6 +1,6 @@
 # GameStar
 
-A website that aims to be one-stop destination for gamers, providing them with a wealth of information on all the latest game releases.
+A web app that aims to be *the* one-stop destination for gamers, providing them with a wealth of information on all the latest game releases.
 
 ## Criteria
 
@@ -56,7 +56,7 @@ A website that aims to be one-stop destination for gamers, providing them with a
     make test
     ```
 
-4.  To build a productino bundle -- into the `dist` directory, run the command:
+4.  To build a production bundle -- into the `dist` directory, run the command:
 
     ```sh
     make build
