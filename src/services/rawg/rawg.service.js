@@ -1,4 +1,5 @@
 import axios from "axios";
+import { delay } from "@/utility/helpers";
 
 const BASE_URL =
   import.meta.env.VITE_RAWG_BASE_URL || "https://api.rawg.io/api";
@@ -18,20 +19,45 @@ export const getPopularGames = async () => {
   );
 };
 
-export const getRecentGames = async () => {
+// Last Week
+export const getRecentGames = async (signal) => {
   // await delay();
   const { data } = await axios.get(
     `${BASE_URL}/games/lists/recent-games?discover=true&ordering=-added&page_size=10&page=1&key=${
       import.meta.env.VITE_RAWG_API_KEY
     }`,
+    {
+      signal,
+    },
   );
   return data;
-  // https://rawg.io/api/games/lists/recent-games?discover=true&ordering=-added&page_size=40&page=1&key=c542e67aec3a4340908f9de9e86038af
 };
 
-// Delaying requests for debug purposes
-function delay(time = 1000) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, time);
-  });
-}
+// Last 30 days
+export const getlast30DaysGames = async (signal) => {
+  // await delay();
+  const { data } = await axios.get(
+    `${BASE_URL}/games/lists/recent-games-past?discover=true&key=${
+      import.meta.env.VITE_RAWG_API_KEY
+    }&ordering=-added&page=1&page_size=10`,
+    {
+      signal,
+    },
+  );
+  return data;
+};
+
+// Best games of all time
+export const getMostPopular = async (signal) => {
+  // await delay();
+  const { data } = await axios.get(
+    `${BASE_URL}/games/lists/popular?discover=true&key=${
+      import.meta.env.VITE_RAWG_API_KEY
+    }&page=1&page_size=10`,
+    {
+      signal,
+    },
+  );
+  return data;
+};
+// "https://api.rawg.io/api/games/lists/popular?discover=true&key=c542e67aec3a4340908f9de9e86038af&page=2&page_size=40"

@@ -10,6 +10,7 @@ import NintendoIcon from "@/assets/images/nintendo.svg";
 import PCIcon from "@/assets/images/pc.svg";
 import PlaystationIcon from "@/assets/images/playstation.svg";
 import XboxIcon from "@/assets/images/xbox.svg";
+import LinuxIcon from "@/assets/images/linux.svg";
 
 // Hover Animation
 // transition duration-300 ease-in-out hover:scale-105 hover:brightness-50 hover:filter
@@ -22,18 +23,19 @@ const platformMap = {
   pc: PCIcon,
   playstation: PlaystationIcon,
   xbox: XboxIcon,
+  linux: LinuxIcon,
 };
 
 const GameCard = ({ game, setGame, showButton = true }) => {
   function getPlatforms(game) {
     const platforms = !game.parent_platforms
       ? []
-      : game.parent_platforms.map((obj) => obj.platform.slug);
+      : game.parent_platforms.filter(Boolean).map((obj) => obj.platform.slug);
 
     return platforms;
   }
 
-  console.log(getPlatforms(game));
+  // console.log(getPlatforms(game));
   return (
     <div
       className="min-h-[20rem] w-full max-w-sm rounded-lg border border-component-border-color bg-component-background-color font-inter shadow"
@@ -83,7 +85,13 @@ const GameCard = ({ game, setGame, showButton = true }) => {
         {showButton && (
           <button
             className="w-full rounded-md border-2 border-[#0D766E] bg-green-200 py-2 font-semibold text-[#0D766E] hover:brightness-75"
-            onClick={() => setGame(game)}
+            onClick={() => {
+              setGame(game);
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
           >
             ChatGPT Summary
           </button>

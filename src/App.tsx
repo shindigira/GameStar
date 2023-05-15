@@ -9,13 +9,28 @@ import GameCategory from "@/scenes/Game/GameCategory";
 
 // Services
 import {
-  getPopularGames,
-  getGenres,
   getRecentGames,
+  getlast30DaysGames,
+  getMostPopular,
 } from "@/services/rawg/rawg.service.js";
 
 // Helpers
 import { getRandomGame } from "@/utility/helpers";
+
+const GameCategoryFetchList = [
+  {
+    gameCategoryName: "Last Week",
+    axiosRequest: getRecentGames,
+  },
+  {
+    gameCategoryName: "Last 30 Days",
+    axiosRequest: getlast30DaysGames,
+  },
+  {
+    gameCategoryName: "Most Popular",
+    axiosRequest: getMostPopular,
+  },
+];
 
 function App() {
   /////* Initialize */////
@@ -25,20 +40,18 @@ function App() {
     isLoading: isLoadingRecent,
     error: errorRecent,
     data: dataRecent,
-  } = useQuery([getRecentGames.name], getRecentGames, {
+  } = useQuery([getRecentGames.name], ({ signal }) => getRecentGames(signal), {
     enabled: Boolean(getRecentGames.name),
     refetchOnWindowFocus: false,
     onSuccess: (res) => {
       /////* 2. If no game in the Hero section, select a random game */////
       if (!game) {
         const results = res.results;
-        console.log(results);
+        // console.log(results);
         setGame(getRandomGame(results || []));
       }
     },
   });
-
-  const recentGames = dataRecent?.results || [];
 
   const isLoading = isLoadingRecent;
 
@@ -49,13 +62,17 @@ function App() {
       {!isLoading && (
         <>
           <HeroContainer game={game} />
-          <GameCategory games={recentGames} setGame={setGame} />
+          {GameCategoryFetchList.map((obj, gcIndex) => (
+            <GameCategory
+              key={obj.gameCategoryName}
+              axiosRequest={obj.axiosRequest}
+              setGame={setGame}
+              gameCategoryName={obj.gameCategoryName}
+              gcIndex={gcIndex}
+            />
+          ))}
         </>
       )}
-
-      {/* <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div>
-      <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div>
-      <div className="text-white">asdklfjlasdjklfasdk asdklfkladsjkad</div> */}
     </div>
   );
 }
