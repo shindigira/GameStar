@@ -11,7 +11,7 @@ function Loading({
   return (
     <div className="flex h-full w-full flex-col items-center justify-center bg-[rgba(0,0,0,0.4)] p-3 text-slate-500">
       <div
-        className={`flex h-16 w-16 ${animation}1 flex-col items-center justify-center`}
+        className={`flex h-16 w-16 ${animation} flex-col items-center justify-center`}
       >
         <img src={icon} alt="" />
       </div>

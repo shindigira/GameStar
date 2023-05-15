@@ -59,7 +59,7 @@ const Hero = ({ game }) => {
               primaryMessage={""}
               secondaryMessage={"Fetching ChatGPT Summary..."}
               icon={ChatGPTIcon}
-              animation={"none"}
+              animation={"animate-bounce"}
             />
           )}
           {dataChatGPTstring && <p className="text-lg">{dataChatGPTstring}</p>}

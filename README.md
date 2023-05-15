@@ -1,5 +1,7 @@
 # GameStar
 
+A website that aims to be one-stop destination for gamers, providing them with a wealth of information on all the latest game releases.
+
 ## Criteria
 
 - Target 4-8 hours of development time
@@ -36,6 +38,7 @@
 - ESLint
 - Prettier
 - Vitest
+- Environmental Variables
 
 ## Usage
 

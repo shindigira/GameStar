@@ -30,16 +30,18 @@ const GameCard = ({ game, setGame }) => {
         </div>
       </div>
       {/* Card Bottom */}
-      <div className="mt-auto flex h-1/3 flex-col justify-between px-3 py-1">
+      <div className="mt-auto flex h-1/3 flex-col justify-between px-3 py-1 text-paragraph-color">
         {/* Game Name and Metacritic Rating Container */}
         <div className="flex flex-row items-center justify-between">
           {/* Game Name */}
           <HTitleSecondary>{game.name}</HTitleSecondary>
         </div>
         <button
-          className="w-full border-2 border-red-500 py-5"
+          className="w-full border-2 border-red-500 py-2"
           onClick={() => setGame(game)}
-        ></button>
+        >
+          ChatGPT
+        </button>
       </div>
     </div>
   );
