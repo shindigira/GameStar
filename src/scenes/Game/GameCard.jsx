@@ -82,7 +82,7 @@ const GameCard = ({ game, setGame, showButton = true }) => {
 
         {showButton && (
           <button
-            className="w-full rounded-md border-2 border-[#0D766E] bg-green-200 py-2 font-semibold text-[#0D766E]"
+            className="w-full rounded-md border-2 border-[#0D766E] bg-green-200 py-2 font-semibold text-[#0D766E] hover:brightness-75"
             onClick={() => setGame(game)}
           >
             ChatGPT Summary
