@@ -4,7 +4,6 @@ import { useQuery } from "@tanstack/react-query";
 // Components
 import Loading from "@/components/Loading";
 import HeroContainer from "@/scenes/Hero/HeroContainer";
-import SectionContainer from "@/components/SectionContainer";
 import GameCategory from "@/scenes/Game/GameCategory";
 
 // Services

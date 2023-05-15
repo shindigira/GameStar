@@ -4,6 +4,7 @@ import { getChatGPTdata } from "@/services/chatgpt/chatgpt.service.js";
 
 import Loading from "@/components/Loading";
 import GameCard from "@/scenes/Game/GameCard";
+import CallOutSummary from "@/shared/CallOutSummary";
 
 import ControllerImage2 from "@/assets/images/controller2.png";
 import ChatGPTIcon from "@/assets/images/chatgpt-icon.svg";
@@ -62,7 +63,12 @@ const Hero = ({ game }) => {
               animation={"animate-bounce"}
             />
           )}
-          {dataChatGPTstring && <p className="text-lg">{dataChatGPTstring}</p>}
+          {dataChatGPTstring && (
+            <CallOutSummary
+              primaryMessage={<ChatGPTHeader />}
+              secondaryMessage={dataChatGPTstring}
+            ></CallOutSummary>
+          )}
         </div>
         {/* game card */}
         <div className="mt-8 flex w-full justify-center p-6 desktop:mt-0 desktop:w-[35%]">
@@ -76,3 +82,14 @@ const Hero = ({ game }) => {
 };
 
 export default Hero;
+
+function ChatGPTHeader() {
+  return (
+    <div className="flex-start flex flex-row items-center gap-3">
+      <div className="h-6 w-6">
+        <img className="h-full w-full" src={ChatGPTIcon} />
+      </div>
+      <h4 className="text-lg font-semibold">ChatGPT Summary</h4>
+    </div>
+  );
+}

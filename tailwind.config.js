@@ -12,6 +12,9 @@ export const theme = {
       "paragraph-color": "#9ca3af",
       "component-border-color": "#374151",
       "component-background-color": "#1f2937",
+      "gpt-border-color": "#0D766E",
+      "gpt-text-color": "#0D766E",
+      "gpt-background-color": "#bbf7d0",
     },
     backgroundImage: (theme) => ({
       "carbon-fiber":
@@ -27,6 +30,7 @@ export const theme = {
     content: {},
     screens: {
       ..._screens,
+      xs: "520px",
       tablet: "640px",
       laptop: "1024px",
       desktop: "1280px",
