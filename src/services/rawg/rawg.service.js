@@ -60,4 +60,3 @@ export const getMostPopular = async (signal) => {
   );
   return data;
 };
-// "https://api.rawg.io/api/games/lists/popular?discover=true&key=c542e67aec3a4340908f9de9e86038af&page=2&page_size=40"
